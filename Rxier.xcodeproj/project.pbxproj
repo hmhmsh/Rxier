@@ -59,11 +59,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4D2F763B20568DE800D7E32F /* Rxier.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Rxier.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4D2F764820568FB200D7E32F /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		4D2F764920568FB200D7E32F /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		4D2F764A20568FB200D7E32F /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		4D2F764B20568FB200D7E32F /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		4D2F7655205695FE00D7E32F /* PublishSubject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PublishSubject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4D2F7656205695FE00D7E32F /* BehavierSubject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BehavierSubject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4DB827B020568798006BFF27 /* Rxier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rxier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB827B320568798006BFF27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DB827B520568798006BFF27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,10 +109,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D2F7654205695CE00D7E32F /* RxSwift_1 */ = {
+			isa = PBXGroup;
+			children = (
+				4D2F7656205695FE00D7E32F /* BehavierSubject.playground */,
+				4D2F7655205695FE00D7E32F /* PublishSubject.playground */,
+			);
+			path = RxSwift_1;
+			sourceTree = "<group>";
+		};
 		4DB827A720568798006BFF27 = {
 			isa = PBXGroup;
 			children = (
-				4D2F763B20568DE800D7E32F /* Rxier.playground */,
+				4D2F7654205695CE00D7E32F /* RxSwift_1 */,
 				4D2F764920568FB200D7E32F /* RxBlocking.framework */,
 				4D2F764820568FB200D7E32F /* RxCocoa.framework */,
 				4D2F764B20568FB200D7E32F /* RxSwift.framework */,
