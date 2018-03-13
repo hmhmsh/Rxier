@@ -81,6 +81,7 @@
 		4DB827CF20568798006BFF27 /* RxierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB827D320568798006BFF27 /* RxierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxierUITests.swift; sourceTree = "<group>"; };
 		4DB827D520568798006BFF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DDACD752057CF7600CE982F /* PricessOperator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PricessOperator.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +116,7 @@
 		4D2F7654205695CE00D7E32F /* RxSwift_1 */ = {
 			isa = PBXGroup;
 			children = (
+				4DDACD752057CF7600CE982F /* PricessOperator.playground */,
 				4D2F767120579D5A00D7E32F /* Disposable.playground */,
 				4D2F7670205790B900D7E32F /* BindTo.playground */,
 				4D2F76572057872F00D7E32F /* Variable.playground */,
