@@ -67,6 +67,7 @@
 		4D2F7656205695FE00D7E32F /* BehavierSubject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BehavierSubject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4D2F76572057872F00D7E32F /* Variable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Variable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4D2F7670205790B900D7E32F /* BindTo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BindTo.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4D2F767120579D5A00D7E32F /* Disposable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Disposable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4DB827B020568798006BFF27 /* Rxier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rxier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB827B320568798006BFF27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DB827B520568798006BFF27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +115,7 @@
 		4D2F7654205695CE00D7E32F /* RxSwift_1 */ = {
 			isa = PBXGroup;
 			children = (
+				4D2F767120579D5A00D7E32F /* Disposable.playground */,
 				4D2F7670205790B900D7E32F /* BindTo.playground */,
 				4D2F76572057872F00D7E32F /* Variable.playground */,
 				4D2F7656205695FE00D7E32F /* BehavierSubject.playground */,
