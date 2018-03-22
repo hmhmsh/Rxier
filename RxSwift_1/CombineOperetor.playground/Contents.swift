@@ -95,3 +95,14 @@ huga.setStr(str: "tarou2")
 huga.setStr(str: "tarou2")
 hoge.setValue(value: 1)
 withLatestFrom.dispose()
+
+let withLatestFrom2 = huga.str.filter({ !$0.isEmpty }).withLatestFrom(hoge.value) { (str, int) -> String in
+	// 2つの値を使用して、Observableを作ることが可能
+	// 最初に指定したObservableに変更があった時だけ呼ばれる
+	return "\(str)_\(int)"
+	}.subscribe(onNext: { (str) in
+		print("with latest from2: \(str)")
+	})
+hoge.setValue(value: 0)
+huga.setStr(str: "tarou")
+withLatestFrom2.dispose()
