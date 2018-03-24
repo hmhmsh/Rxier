@@ -12,6 +12,7 @@
 		4D19CF8420660C1500BECCCD /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D2F764B20568FB200D7E32F /* RxSwift.framework */; };
 		4D19CF8520660C1500BECCCD /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D2F764A20568FB200D7E32F /* RxTest.framework */; };
 		4D271B9A2066328400FF8853 /* DisposableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D271B992066328400FF8853 /* DisposableTests.swift */; };
+		4D271B9C2066354300FF8853 /* ProcessOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D271B9B2066354300FF8853 /* ProcessOperatorTests.swift */; };
 		4D2F764C20568FB200D7E32F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D2F764820568FB200D7E32F /* RxCocoa.framework */; };
 		4D2F764D20568FB200D7E32F /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D2F764820568FB200D7E32F /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4D2F764E20568FB200D7E32F /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D2F764920568FB200D7E32F /* RxBlocking.framework */; };
@@ -69,6 +70,7 @@
 
 /* Begin PBXFileReference section */
 		4D271B992066328400FF8853 /* DisposableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposableTests.swift; sourceTree = "<group>"; };
+		4D271B9B2066354300FF8853 /* ProcessOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessOperatorTests.swift; sourceTree = "<group>"; };
 		4D2F764820568FB200D7E32F /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		4D2F764920568FB200D7E32F /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		4D2F764A20568FB200D7E32F /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				4DCC00112066232C00C5BDE4 /* VariableTests.swift */,
 				4DCC00162066257300C5BDE4 /* BindToTests.swift */,
 				4D271B992066328400FF8853 /* DisposableTests.swift */,
+				4D271B9B2066354300FF8853 /* ProcessOperatorTests.swift */,
 			);
 			path = RxSwift_1;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				4DCC00122066232C00C5BDE4 /* VariableTests.swift in Sources */,
 				4DB2A71820661BC500A19453 /* BehavierSubjectTests.swift in Sources */,
 				4DF432CD206605F200D1E569 /* PublishSubjectTests.swift in Sources */,
+				4D271B9C2066354300FF8853 /* ProcessOperatorTests.swift in Sources */,
 				4DB827C920568798006BFF27 /* RxierTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
