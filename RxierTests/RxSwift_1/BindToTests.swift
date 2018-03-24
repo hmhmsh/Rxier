@@ -55,3 +55,35 @@ class BindToTests: XCTestCase {
         disposable3.dispose()
     }
 }
+
+import RxCocoa
+
+/**
+ * Subject や Variable は Observable の bindTo メソッドの引数として渡せます。
+ * この bindTo を使うと subscribe を使うより少し簡単にイベントをプロパティに接続できます。
+ */
+struct BindToPresenter {
+    private let buttonHiddenRelay = BehaviorRelay(value: false)
+    var buttonHidden: Observable<Bool> { return buttonHiddenRelay.asObservable() }
+    
+    func start() {
+        buttonHiddenRelay.accept(true)
+    }
+    
+    func pause() {
+        buttonHiddenRelay.accept(false)
+    }
+}
+
+/**
+ * 自分で作成したプロパティにbindToで接続する
+ */
+struct BindToHoge {
+    var isHidden = BehaviorRelay(value: false)
+    
+    init(onNext: @escaping (Bool) -> Void) {
+        _ = self.isHidden.subscribe(onNext: { (hidden) in
+            onNext(hidden)
+        })
+    }
+}
