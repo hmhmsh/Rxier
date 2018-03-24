@@ -31,6 +31,9 @@
 		4DB827BE20568798006BFF27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DB827BC20568798006BFF27 /* LaunchScreen.storyboard */; };
 		4DB827C920568798006BFF27 /* RxierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB827C820568798006BFF27 /* RxierTests.swift */; };
 		4DB827D420568798006BFF27 /* RxierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB827D320568798006BFF27 /* RxierUITests.swift */; };
+		4DCC000F2066228500C5BDE4 /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC000E2066228500C5BDE4 /* Variable.swift */; };
+		4DCC00102066228500C5BDE4 /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC000E2066228500C5BDE4 /* Variable.swift */; };
+		4DCC00122066232C00C5BDE4 /* VariableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC00112066232C00C5BDE4 /* VariableTests.swift */; };
 		4DF432CD206605F200D1E569 /* PublishSubjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF432CC206605F200D1E569 /* PublishSubjectTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +92,8 @@
 		4DB827CF20568798006BFF27 /* RxierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB827D320568798006BFF27 /* RxierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxierUITests.swift; sourceTree = "<group>"; };
 		4DB827D520568798006BFF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DCC000E2066228500C5BDE4 /* Variable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variable.swift; sourceTree = "<group>"; };
+		4DCC00112066232C00C5BDE4 /* VariableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableTests.swift; sourceTree = "<group>"; };
 		4DF432CC206605F200D1E569 /* PublishSubjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishSubjectTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +135,7 @@
 			children = (
 				4D9EFEFF2066034800E54290 /* PublishSubject.swift */,
 				4D19CF8620660E6D00BECCCD /* BehavierSubject.swift */,
+				4DCC000E2066228500C5BDE4 /* Variable.swift */,
 			);
 			path = RxSwift_1;
 			sourceTree = "<group>";
@@ -196,6 +202,7 @@
 			children = (
 				4DF432CC206605F200D1E569 /* PublishSubjectTests.swift */,
 				4DB2A71720661BC500A19453 /* BehavierSubjectTests.swift */,
+				4DCC00112066232C00C5BDE4 /* VariableTests.swift */,
 			);
 			path = RxSwift_1;
 			sourceTree = "<group>";
@@ -339,6 +346,7 @@
 				4DB827B420568798006BFF27 /* AppDelegate.swift in Sources */,
 				4D19CF8720660E6D00BECCCD /* BehavierSubject.swift in Sources */,
 				4D9EFF002066034800E54290 /* PublishSubject.swift in Sources */,
+				4DCC000F2066228500C5BDE4 /* Variable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +354,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DCC00122066232C00C5BDE4 /* VariableTests.swift in Sources */,
 				4D9EFF012066034800E54290 /* PublishSubject.swift in Sources */,
+				4DCC00102066228500C5BDE4 /* Variable.swift in Sources */,
 				4DB2A71820661BC500A19453 /* BehavierSubjectTests.swift in Sources */,
 				4DF432CD206605F200D1E569 /* PublishSubjectTests.swift in Sources */,
 				4D19CF8820660E6D00BECCCD /* BehavierSubject.swift in Sources */,
