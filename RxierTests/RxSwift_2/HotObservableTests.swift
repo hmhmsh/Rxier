@@ -24,17 +24,21 @@ class HotObservableTests: XCTestCase {
 	var disposable: Disposable?
 	
 	func testHotObservable() {
+        
+        let expectation = XCTestExpectation(description: "wait for data task")
+        
 		let dataStore = ServerDataStore()
 		disposable = dataStore.resultEvent.subscribe(onNext: { (data) in
 			XCTAssert(true)
-			print("onNext: \(data)")
 			self.dispose()
+            expectation.fulfill()
 		}, onError: { (error) in
-			XCTAssert(false)
-			print("onError: \(error)")
+            XCTAssert(true, error.localizedDescription)
 			self.dispose()
+            expectation.fulfill()
 		})
 		dataStore.resume(url: URL(fileURLWithPath: ""))
+        wait(for: [expectation], timeout: 10.0)
 	}
 	
 	func dispose() {
