@@ -28,16 +28,27 @@ class HotObservableTests: XCTestCase {
         let expectation = XCTestExpectation(description: "wait for data task")
         
 		let dataStore = ServerDataStore()
-		disposable = dataStore.resultEvent.subscribe(onNext: { (data) in
-			XCTAssert(true)
-			self.dispose()
-            expectation.fulfill()
-		}, onError: { (error) in
-            XCTAssert(true, error.localizedDescription)
-			self.dispose()
-            expectation.fulfill()
-		})
-		dataStore.resume(url: URL(fileURLWithPath: ""))
+        disposable = dataStore.resultEvent.subscribe({ [weak self] (event) in
+            switch(event) {
+            case .next(let data):
+                print("onNext: \(data)")
+            case .error(let error):
+                print("onError: \(error)")
+                XCTAssert(true)
+                self?.disposable?.dispose()
+                expectation.fulfill()
+            case .completed:
+                print("onCompleted")
+                XCTAssert(true)
+                self?.disposable?.dispose()
+                expectation.fulfill()
+            }
+        })
+        
+        guard let url = URL(string: "https://apple.com") else {
+            fatalError()
+        }
+		dataStore.resume(url: url)
         wait(for: [expectation], timeout: 10.0)
 	}
 	
@@ -62,7 +73,7 @@ class ServerDataStore {
 			
 			DispatchQueue.main.async {
 				guard let data = data else {
-					resultSubject.onError(error ?? FetchServerDataError.NoData)
+					resultSubject.onError(FetchServerDataError.NoData)
 					return
 				}
 				resultSubject.onNext(data)
