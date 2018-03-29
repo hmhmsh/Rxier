@@ -11,14 +11,18 @@ import XCTest
 import RxSwift
 
 /*
-* Subject を使ったものが Hot な Observable です。Subject そのものでなくても、例えば Variable のように内部で Subject を使っているものもあります。
-* どこからも subsusribe されていなくても動作する
-* 複数から subscribe されると同じ動作結果を通知する
-*/
+ * Subject を使ったものが Hot な Observable です。Subject そのものでなくても、例えば Variable のように内部で Subject を使っているものもあります。
+ * どこからも subsusribe されていなくても動作する
+ * 複数から subscribe されると同じ動作結果を通知する
+ */
 
 /*
-* HotなObservableを使って非同期通信結果を通知してみる
-*/
+ * このクラスは１回限りの使い捨てということです。onError/onCompleted が発生したらその後はイベントが通知されないので、もう一度 start すると、通信は開始しますが結果が通知されません。
+ */
+
+/*
+ * HotなObservableを使って非同期通信結果を通知してみる
+ */
 class HotObservableTests: XCTestCase {
 	
 	var disposable: Disposable?
