@@ -32,7 +32,9 @@
 		4DB827D420568798006BFF27 /* RxierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB827D320568798006BFF27 /* RxierUITests.swift */; };
 		4DCC00122066232C00C5BDE4 /* VariableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC00112066232C00C5BDE4 /* VariableTests.swift */; };
 		4DCC00172066257300C5BDE4 /* BindToTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC00162066257300C5BDE4 /* BindToTests.swift */; };
+		4DE8DDC8206CB91A00B6D82B /* ColdObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE8DDC7206CB91A00B6D82B /* ColdObservableTests.swift */; };
 		4DF432CD206605F200D1E569 /* PublishSubjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF432CC206605F200D1E569 /* PublishSubjectTests.swift */; };
+		9C59C71F2067F15800EB2190 /* HotObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59C71E2067F15800EB2190 /* HotObservableTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +95,9 @@
 		4DB827D520568798006BFF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DCC00112066232C00C5BDE4 /* VariableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableTests.swift; sourceTree = "<group>"; };
 		4DCC00162066257300C5BDE4 /* BindToTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindToTests.swift; sourceTree = "<group>"; };
+		4DE8DDC7206CB91A00B6D82B /* ColdObservableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColdObservableTests.swift; sourceTree = "<group>"; };
 		4DF432CC206605F200D1E569 /* PublishSubjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishSubjectTests.swift; sourceTree = "<group>"; };
+		9C59C71E2067F15800EB2190 /* HotObservableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotObservableTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,7 @@
 		4DB827C720568798006BFF27 /* RxierTests */ = {
 			isa = PBXGroup;
 			children = (
+				9C59C71D2067F13A00EB2190 /* RxSwift_2 */,
 				4DF432CB206605D700D1E569 /* RxSwift_1 */,
 				4DB827C820568798006BFF27 /* RxierTests.swift */,
 				4DB827CA20568798006BFF27 /* Info.plist */,
@@ -197,6 +202,15 @@
 				4D271B9D20663D5A00FF8853 /* CombineOperatorTests.swift */,
 			);
 			path = RxSwift_1;
+			sourceTree = "<group>";
+		};
+		9C59C71D2067F13A00EB2190 /* RxSwift_2 */ = {
+			isa = PBXGroup;
+			children = (
+				9C59C71E2067F15800EB2190 /* HotObservableTests.swift */,
+				4DE8DDC7206CB91A00B6D82B /* ColdObservableTests.swift */,
+			);
+			path = RxSwift_2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +364,8 @@
 				4DB2A71820661BC500A19453 /* BehavierSubjectTests.swift in Sources */,
 				4DF432CD206605F200D1E569 /* PublishSubjectTests.swift in Sources */,
 				4D271B9C2066354300FF8853 /* ProcessOperatorTests.swift in Sources */,
+				9C59C71F2067F15800EB2190 /* HotObservableTests.swift in Sources */,
+				4DE8DDC8206CB91A00B6D82B /* ColdObservableTests.swift in Sources */,
 				4DB827C920568798006BFF27 /* RxierTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
